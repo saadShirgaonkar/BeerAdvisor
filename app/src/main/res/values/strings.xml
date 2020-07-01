@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BeerAdvisor</string>
+    <string name="findDrink">Find Drink</string>
+    <string name="brands">No Beer Selected</string>
+</resources>
