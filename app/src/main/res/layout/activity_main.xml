@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:padding="15dp"
     tools:context=".MainActivity"
-    tools:orientation="vertical">
+    android:orientation="vertical">
 
     <Spinner
         android:id="@+id/color"
@@ -13,7 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="16dp"
-        android:layout_marginTop="40dp" />
+        android:layout_marginTop="40dp"
+        android:entries="@array/beerColors" />
 
     <Button
         android:id="@+id/findDrink"
@@ -21,7 +22,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="16dp"
-        android:text="@string/findDrink" />
+        android:text="@string/findDrink"
+        android:textSize="25sp"
+        android:onClick="onClickFindBeer"/>
 
     <TextView
         android:id="@+id/brands"
@@ -29,6 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="16dp"
-        android:text="@string/brands" />
+        android:text="@string/brands"
+        android:textSize="25sp"/>
 
 </LinearLayout>

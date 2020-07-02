@@ -2,4 +2,10 @@
     <string name="app_name">BeerAdvisor</string>
     <string name="findDrink">Find Drink</string>
     <string name="brands">No Beer Selected</string>
+    <string-array name="beerColors">
+        <item>light</item>
+        <item>amber</item>
+        <item>brown</item>
+        <item>dark</item>
+    </string-array>
 </resources>
