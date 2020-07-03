@@ -17,8 +17,8 @@ public class MainActivity extends Activity{
     }
     public void onClickFindBeer(View view)
     {
-        TextView brands=(TextView) findViewById(R.id.brands);
-        Spinner color=(Spinner) findViewById(R.id.color);
+        TextView brands= findViewById(R.id.brands);
+        Spinner color= findViewById(R.id.color);
         String beerType=String.valueOf(color.getSelectedItem());
         List<String> brandList=expert.getBrands(beerType);
         StringBuilder brandsFormatted=new StringBuilder();
@@ -27,7 +27,7 @@ public class MainActivity extends Activity{
            brandsFormatted.append(brand).append("\n");
         }
 
-        brands.setText(beerType);
+        brands.setText(brandsFormatted);
     }
 
 }
